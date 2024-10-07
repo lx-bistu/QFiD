@@ -1,5 +1,7 @@
-<div align="center">
+
   <h1> Quantum-Inspired Fusion for Open-domain Question Answering </h1>
+
+
 
 # Development
 ## Setup
