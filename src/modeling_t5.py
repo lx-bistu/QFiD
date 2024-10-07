@@ -182,11 +182,6 @@ class T5ForConditionalGeneration(T5PreTrainedModel):
         if 'qf' in opt.add_fusion and not opt.use_lora:
             self.Linear_a = nn.Linear(config.hidden_size, config.hidden_size, bias=False)
             self.Linear_p = nn.Linear(config.hidden_size, config.hidden_size, bias=False)
-        elif 'qf' in opt.add_fusion and opt.use_lora:
-            self.Linear_a_1 = nn.Linear(config.hidden_size, 2, bias=False)
-            self.Linear_a_2 = nn.Linear(2, config.hidden_size, bias=False)
-            self.Linear_p_1 = nn.Linear(config.hidden_size, 2, bias=False)
-            self.Linear_p_2 = nn.Linear(2, config.hidden_size, bias=False)
 
 
     @add_start_docstrings(PARALLELIZE_DOCSTRING)
