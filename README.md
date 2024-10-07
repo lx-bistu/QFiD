@@ -62,6 +62,7 @@ CUDA_VISIBLE_DEVICES=0 python test_reader.py \
 
 # Data
 Following [FiD](https://github.com/facebookresearch/FiD), we use the same data and format.
+
 You can also get the data with the following script.
 ```
 sh get-data.sh
