@@ -180,7 +180,6 @@ class T5ForConditionalGeneration(T5PreTrainedModel):
         self.device_map = None
         self.use_lora = opt.use_lora
         if 'qf' in opt.add_fusion and not opt.use_lora:
-            # 实部映射到虚部
             self.Linear_a = nn.Linear(config.hidden_size, config.hidden_size, bias=False)
             self.Linear_p = nn.Linear(config.hidden_size, config.hidden_size, bias=False)
         elif 'qf' in opt.add_fusion and opt.use_lora:
