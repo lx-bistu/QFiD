@@ -36,10 +36,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.run --nproc_per_node=${
 	        --n_context $N_CONTEXT \
 	        --add_loss binary \
 	        --cat_emb \
-			--name ${NAME} \
+                --name ${NAME} \
 	        --checkpoint_dir checkpoint \
 	        --use_checkpoint \
-			--add_fusion qf_ds \
+                --add_fusion qf_ds \
 ```
 ## Test Script
 ```
